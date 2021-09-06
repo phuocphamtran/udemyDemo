@@ -18,3 +18,50 @@
   background-color: $bg-hover;
   border: 1px solid $border-hover;
 }
+@mixin styleFormSearch($bg-color, $bg-color-focus, $boder-color) {
+  .input-group {
+    background-color: $bg-color;
+    .form-control {
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+      transition: none;
+      color: $color-black-light;
+      &::placeholder {
+        color: $color-black-light;
+      }
+      &:focus {
+        background-color: $bg-color-focus;
+        border-top-color: $boder-color;
+        border-bottom-color: $boder-color;
+        border-left-color: $boder-color;
+      }
+      &:focus + .input-group-append {
+        .input-group-text {
+          background-color: $bg-color-focus;
+          border-top-color: $boder-color;
+          border-bottom-color: $boder-color;
+          border-right-color: $boder-color;
+          color: $color-red-0;
+          // parent selector
+          &:hover {
+            color: $color-white-0;
+            background-color: $color-red-0;
+          }
+        }
+      }
+    }
+    .input-group-append {
+      .input-group-text {
+        background-color: transparent;
+        border-color: transparent;
+        color: $color-red-0;
+        // parent selector
+        &:hover {
+          color: $color-white-0;
+          background-color: $color-red-0;
+        }
+      }
+    }
+  }
+}
