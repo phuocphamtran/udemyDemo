@@ -8,15 +8,19 @@
 @import "./Base/reset";
 @import "./Base/customize";
 
+// Layouts
 @import "./Layouts/header";
 @import "./Layouts/footer";
 @import "./Layouts/courses";
 @import "./Layouts/intro";
+@import "./Layouts/viewing";
+@import "./Layouts/banner";
 
 // components
 @import "./Components/button";
 @import "./Components/cover";
 @import "./Components/card";
+
 // pages
 @import "./Pages/home";
 

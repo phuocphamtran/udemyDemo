@@ -28,6 +28,13 @@ body {
   position: absolute;
   top: 30%;
 }
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
+  background-color: #fff;
+  color: #007791;
+}
+.owl-carousel .owl-nav button.owl-prev:focus, .owl-carousel .owl-nav button.owl-next:focus {
+  outline: none;
+}
 .owl-carousel .owl-nav button.owl-prev {
   left: -30px;
 }
@@ -177,6 +184,10 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+.courses .courses__content .row {
+  margin-right: 0;
+  margin-left: 0;
+}
 .courses .courses__content .courses__left {
   background-color: rgba(20, 23, 28, 0.05);
   padding: 0 2rem;
@@ -236,6 +247,38 @@ body {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
+}
+
+.viewing {
+  padding: 22px 0;
+}
+.viewing .viewing__content {
+  width: 90%;
+  margin: auto;
+}
+.viewing .viewing__content h2 {
+  font-size: 20px;
+}
+
+.banner {
+  background: url(../img/udemy-logo-semi-transparent.svg) 0/30% no-repeat, linear-gradient(61deg, #6e1a52, #76c5d6 41%);
+  background-blend-mode: overlay;
+  height: 325px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.banner h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: normal;
+}
+.banner p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.banner button {
+  margin: 10px 0;
 }
 
 .button--white {
