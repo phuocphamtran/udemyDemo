@@ -131,9 +131,44 @@
         }
       }
       .myNavBar__buttons {
+        display: flex;
         &:hover {
           background-color: transparent;
         }
+        .button--white {
+          margin-right: $mg-0;
+        }
+        .button {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1355px) {
+    .myNavBar__right {
+      .navbar-nav {
+        .nav-item {
+          white-space: normal;
+          .nav-link {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .myNavBar--reset {
+      padding-left: 0;
+    }
+  }
+  // max-width: 1200px
+  @include responsive("extra-large") {
+    .business,
+    .instructor {
+      display: none;
+    }
+    .myNavBar__right {
+      .navbar-nav {
+        justify-content: space-around;
       }
     }
   }
