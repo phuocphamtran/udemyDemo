@@ -177,6 +177,58 @@ body {
   background-color: transparent;
 }
 
+footer {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+footer .footer__top {
+  width: 90%;
+  margin: 40px auto;
+}
+footer .footer__top ul {
+  height: 110px;
+}
+footer .footer__top ul .nav-item {
+  flex-basis: 25%;
+}
+footer .footer__top ul .nav-item .nav-link {
+  color: #29303b;
+  padding: 0;
+}
+footer .footer__top ul .nav-item .nav-link.bold {
+  font-weight: 700;
+}
+footer .footer__top .btn-group {
+  display: block;
+}
+footer .footer__top .btn-group .button--dropup {
+  min-width: 160px;
+  box-shadow: none;
+}
+footer .footer__top .btn-group .button--dropup i {
+  padding: 0 5px;
+}
+footer .footer__top .btn-group .button--dropup::after {
+  margin-left: 30%;
+}
+footer .footer__top .btn-group .dropdown-menu {
+  font-size: 13px;
+}
+footer .footer__bottom {
+  width: 90%;
+  margin: 30px auto;
+}
+footer .footer__bottom img {
+  width: 110px;
+  margin-right: 10px;
+}
+footer .footer__bottom .nav-link {
+  color: #007791;
+  font-size: 13px;
+  font-weight: normal;
+}
+
 .courses {
   margin: 25px 0;
 }
@@ -313,6 +365,40 @@ body {
   margin-bottom: 20px;
 }
 
+.partners {
+  background-color: #f7f8fa;
+  padding: 20px 0;
+}
+.partners .partners__content {
+  width: 70%;
+  margin: 0 auto;
+}
+.partners .partners__content .partners__text {
+  text-align: center;
+}
+.partners .partners__content .partners__img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs {
+  background-color: #f7f8fa;
+}
+.jobs .jobs__content .row {
+  padding: 10px 0;
+}
+.jobs .jobs__content .jobs__item {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.jobs .jobs__content .jobs__item h2 {
+  color: #505763;
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
@@ -341,6 +427,21 @@ body {
   color: #fff;
   background-color: #521822;
   border: 1px solid #521822;
+}
+
+.button--dropup {
+  color: #686f7a;
+  background-color: #fff;
+  border: 1px solid #505763;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.button--dropup:hover {
+  color: #29303b;
+  background-color: transparent;
+  border: 1px solid #29303b;
 }
 
 .cover {
