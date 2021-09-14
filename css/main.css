@@ -461,6 +461,29 @@ footer .footer__bottom .nav-link {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1200px) {
+  .partners .partners__content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .partners .partners__content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partners .partners__content {
+    width: 60%;
+  }
+  .partners .partners__content .partners__img {
+    flex-wrap: wrap;
+  }
+  .partners .partners__content .partners__img .partners__item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 
 .jobs {
   background-color: #f7f8fa;
@@ -478,6 +501,11 @@ footer .footer__bottom .nav-link {
   color: #505763;
   font-size: 19px;
   font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .jobs .border-right {
+    border-right: none !important;
+  }
 }
 
 .button--white {
