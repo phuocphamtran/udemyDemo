@@ -104,6 +104,7 @@
           position: absolute;
           top: 50px;
           right: 0;
+          z-index: 1;
           border-top: 1px solid $color-gray-1;
           box-shadow: 0 4px 16px $color-gray-5;
           &::before {
@@ -145,13 +146,17 @@
     }
   }
 
-  @media screen and (min-width: 1200px) and (max-width: 1355px) {
+  @media screen and (min-width: 1200px) and (max-width: 1375px) {
     .myNavBar__right {
       .navbar-nav {
         .nav-item {
           white-space: normal;
+          text-align: center;
           .nav-link {
             font-size: 12px;
+          }
+          .overlay {
+            white-space: normal;
           }
         }
       }
@@ -169,6 +174,24 @@
     .myNavBar__right {
       .navbar-nav {
         justify-content: space-around;
+      }
+    }
+  }
+  @include responsive("medium") {
+    .myNavBar__left {
+      .myNavBar__categories,
+      .myNavBar__form-search {
+        display: none;
+      }
+    }
+    .myNavBar__right {
+      width: 50%;
+      margin-left: auto;
+      .navbar-nav {
+        text-align: center;
+        .myNavBar__buttons {
+          display: none;
+        }
       }
     }
   }
